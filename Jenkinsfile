@@ -3,6 +3,9 @@ pipeline {
      triggers { 
           pollSCM('* * * * *')
      }
+     // tools { 
+     // gradle 'MójGradle'
+     // }
      stages {
           stage("Compile") {
                steps {
