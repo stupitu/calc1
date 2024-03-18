@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 public class Calculator {
 	@Cacheable("sum")
 	public int sum(int a, int b) {
-		return a + b;
+		int result = a + b;
+		System.out.println("WYNIK: "+ result); // wyświetlanie wyniku
+		return result;
 	}
 }
