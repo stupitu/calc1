@@ -25,5 +25,10 @@ pipeline {
                     sh "./gradlew jacocoTestCoverageVerification"
      }
 }
+          stage("Clean workspace") {
+               steps {
+                    deleteDir()
 }
+}
+     }
 }
